@@ -56,7 +56,13 @@ const BarcodeScanner = ({ onDetected, busy }) => {
 
       <div className="grid gap-4 p-4 lg:grid-cols-[minmax(0,1.3fr)_minmax(280px,0.7fr)]">
         <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-950">
-          <video ref={videoRef} className="absolute inset-0 h-full w-full object-cover" muted playsInline />
+           <video
+           ref={videoRef}
+            className="absolute inset-0 h-full w-full object-cover"
+              muted
+             playsInline
+              aria-label="Barcode camera preview"
+              />
           {!isScanning ? (
             <div className="absolute inset-0 flex items-center justify-center text-white">
               <div className="text-center">
