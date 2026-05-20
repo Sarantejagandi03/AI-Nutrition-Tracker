@@ -1,0 +1,13 @@
+{
+  "name": "ai-nutrition-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI Nutrition Tracker MERN stack project with barcode lookup, AI meal analysis, goals, and dashboard analytics.",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "start:server": "npm start --prefix server"
+  }
+}
