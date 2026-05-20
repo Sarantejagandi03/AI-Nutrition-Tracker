@@ -33,7 +33,9 @@ const ScannerPage = () => {
       <PageHeader title="Barcode Scanner" eyebrow="OpenFoodFacts" />
 
       {scanMessage ? (
-        <p className="mb-4 flex items-center gap-2 rounded-md bg-emerald-50 p-3 text-sm font-semibold text-emerald-700">
+        <p
+   className="mb-4 flex items-center gap-2 rounded-md bg-emerald-50 p-3 text-sm font-semibold text-emerald-700"
+  role="status">
           <CheckCircle2 size={17} />
           {scanMessage}
         </p>
