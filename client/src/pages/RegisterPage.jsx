@@ -52,9 +52,10 @@ const RegisterPage = () => {
             <div className="mt-5 space-y-4">
               <label>
                 <span className="mb-1 block text-sm font-semibold text-slate-700">Name</span>
-                <input
-                  className="field"
-                  value={registerForm.name}
+               <input
+                className="field"
+                autoComplete="name"
+                value={registerForm.name}
                   onChange={(event) => setRegisterForm((currentForm) => ({ ...currentForm, name: event.target.value }))}
                   required
                 />
@@ -64,6 +65,7 @@ const RegisterPage = () => {
                 <input
                   className="field"
                   type="email"
+                  autoComplete="email"
                   value={registerForm.email}
                   onChange={(event) => setRegisterForm((currentForm) => ({ ...currentForm, email: event.target.value }))}
                   required
@@ -71,11 +73,12 @@ const RegisterPage = () => {
               </label>
               <label>
                 <span className="mb-1 block text-sm font-semibold text-slate-700">Password</span>
-                <input
-                  className="field"
-                  type="password"
-                  minLength="6"
-                  value={registerForm.password}
+               <input
+                 className="field"
+                 type="password"
+                 minLength="6"
+                 autoComplete="new-password"
+                 value={registerForm.password}
                   onChange={(event) => setRegisterForm((currentForm) => ({ ...currentForm, password: event.target.value }))}
                   required
                 />
