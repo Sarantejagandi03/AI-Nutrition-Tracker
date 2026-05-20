@@ -56,9 +56,10 @@ const LoginPage = () => {
               <label>
                 <span className="mb-1 block text-sm font-semibold text-slate-700">Email</span>
                 <input
-                  className="field"
-                  type="email"
-                  value={loginForm.email}
+                      className="field"
+                       type="email"
+                        autoComplete="email"
+                         value={loginForm.email}
                   onChange={(event) => setLoginForm((currentForm) => ({ ...currentForm, email: event.target.value }))}
                   required
                 />
@@ -66,8 +67,9 @@ const LoginPage = () => {
               <label>
                 <span className="mb-1 block text-sm font-semibold text-slate-700">Password</span>
                 <input
-                  className="field"
-                  type="password"
+                 className="field"
+                 type="password"
+                  autoComplete="current-password"
                   value={loginForm.password}
                   onChange={(event) => setLoginForm((currentForm) => ({ ...currentForm, password: event.target.value }))}
                   required
